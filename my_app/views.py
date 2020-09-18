@@ -9,7 +9,7 @@ posts = [{"title": "This is my 1st post!", "description": "this is my first desc
 
 @app.route("/")
 def index():
-    return render_template("index0.html", name=name, facts=facts, posts=posts)
+    return render_template("index2.html", name=name, facts=facts, posts=posts)
 
 @app.route("/change_name")
 def change_name():

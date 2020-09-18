@@ -6,7 +6,8 @@
   <title>Hack Book</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link rel="stylesheet" href="../static/main.css">
-  
+  <script type="text/javascript" src="{{
+    url_for('static', filename='../static/js/api.js') }}"></script>
 </head>
 <body>
   <div id="container">
@@ -28,6 +29,9 @@
         </div>
       </div>
     {% endfor %}
+    <p>Click this button for a random cat 🐱</p>
+    <button style="margin-bottom: 10px;"id="cat-button" type="button">CAT</button>
+    <div id="cat-div"></div>
   </div>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
