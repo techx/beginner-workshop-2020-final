@@ -1,8 +1,6 @@
 import os
 from flask import Flask, session, request
 
-
-
 app = Flask(__name__)
 
 #load main config
